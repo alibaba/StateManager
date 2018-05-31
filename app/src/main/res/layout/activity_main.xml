@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.alipictures.movie.demo.MainActivity">
+
+    <Button
+        android:id="@+id/show_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="显示Loading态"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/show_exception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="显示Exception态"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/statemanager_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="直接StateManagerActivity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/recyclerview_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="RecyclerView局部使用"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/statelayout_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="普通局部使用StateLayout"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/customstate_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="动态注册自定义State"
+        android:textAllCaps="false" />
+</LinearLayout>

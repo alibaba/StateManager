@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StateLayout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="StateLayout 可以支持局部刷新等状态" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击显示Loading态"
+        android:textAllCaps="false" />
+
+    <com.alipictures.movie.statemanager.StateLayout
+        android:id="@+id/statelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StateLayout Demo"
+            android:textAllCaps="false" />
+
+    </com.alipictures.movie.statemanager.StateLayout>
+</LinearLayout>

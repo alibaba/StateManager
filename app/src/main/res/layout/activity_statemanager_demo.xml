@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The inside of the StateLayout only oen direct View-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示loading" />
+
+
+    <TextView
+        android:id="@+id/show_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="显示exception" />
+
+    <TextView
+        android:id="@+id/show_core"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="显示core" />
+</LinearLayout>
+
+

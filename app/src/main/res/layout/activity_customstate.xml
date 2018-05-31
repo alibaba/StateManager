@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipictures.movie.statemanager.StateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="CoreState"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="StateManager自定义State" />
+
+        <Button
+            android:id="@+id/request_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="请求数据" />
+    </LinearLayout>
+
+</com.alipictures.movie.statemanager.StateLayout>
