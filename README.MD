@@ -17,10 +17,15 @@
 3. 支持拓展自己的状态
 4. 支持局部或者全局显示各种状态
 5. 支持Activity、Fragment、Layout及帮助类的方式
+6. 支持在RecyclerView中单个Item变换各种状态
 
 ## 用法
 
-### 1. StateManagerActivity
+### 1. StateLayout
+
+这是一个自定义布局容器，可以直接在xml文件中使用
+
+### 2. StateManagerActivity
 
 需要继承StateManagerActivity,其余流程保持不变
 
@@ -28,9 +33,6 @@
 
 需要实现getLayoutId(),返回对应的布局资源，在initViewContent()方法中，初始化UI，其余流程保持不变
 
-### 3. StateLayout
-
-这是一个自定义布局容器，可以直接在xml文件中使用
 
 ## 其他
 
