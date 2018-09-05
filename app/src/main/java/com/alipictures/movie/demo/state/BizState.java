@@ -4,8 +4,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.alipictures.movie.demo.R;
-import com.alipictures.movie.statemanager.state.BaseState;
-import com.alipictures.movie.statemanager.state.StateProperty;
+import com.alipictures.statemanager.state.BaseState;
+import com.alipictures.statemanager.state.StateProperty;
 
 public class BizState extends BaseState<BizState.BizMo> {
     public final static String BIZ_STATE = "BizState";

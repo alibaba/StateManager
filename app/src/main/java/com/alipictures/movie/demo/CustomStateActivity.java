@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.alipictures.movie.demo.state.BizState;
 import com.alipictures.movie.demo.state.LoadingState;
-import com.alipictures.movie.statemanager.StateLayout;
+import com.alipictures.statemanager.StateLayout;
 
 /**
  * 自定义State及动态注册

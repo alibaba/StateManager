@@ -1,11 +1,11 @@
-package com.alipictures.movie.statemanager.state;
+package com.alipictures.statemanager.state;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alipictures.movie.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.manager.StateEventListener;
 
 /**
  * 基础状态器，加载一些界面

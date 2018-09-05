@@ -1,8 +1,8 @@
-package com.alipictures.movie.statemanager.loader;
+package com.alipictures.statemanager.loader;
 
 import android.view.View;
 
-import com.alipictures.movie.statemanager.state.IState;
+import com.alipictures.statemanager.state.IState;
 
 /**
  * 状态加载器，加载各种状态

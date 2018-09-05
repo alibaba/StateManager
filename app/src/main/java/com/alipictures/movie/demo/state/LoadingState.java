@@ -3,7 +3,7 @@ package com.alipictures.movie.demo.state;
 import android.view.View;
 
 import com.alipictures.movie.demo.R;
-import com.alipictures.movie.statemanager.state.BaseState;
+import com.alipictures.statemanager.state.BaseState;
 
 public class LoadingState extends BaseState {
     public static final String STATE = "LoadingState";

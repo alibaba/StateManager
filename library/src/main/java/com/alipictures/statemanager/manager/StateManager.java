@@ -1,4 +1,4 @@
-package com.alipictures.movie.statemanager.manager;
+package com.alipictures.statemanager.manager;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -8,12 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.alipictures.movie.statemanager.loader.StateLoader;
-import com.alipictures.movie.statemanager.loader.StateRepository;
-import com.alipictures.movie.statemanager.state.BaseState;
-import com.alipictures.movie.statemanager.state.CoreState;
-import com.alipictures.movie.statemanager.state.IState;
-import com.alipictures.movie.statemanager.state.StateProperty;
+import com.alipictures.statemanager.loader.StateLoader;
+import com.alipictures.statemanager.loader.StateRepository;
+import com.alipictures.statemanager.state.BaseState;
+import com.alipictures.statemanager.state.CoreState;
+import com.alipictures.statemanager.state.IState;
+import com.alipictures.statemanager.state.StateProperty;
 
 import java.util.Iterator;
 

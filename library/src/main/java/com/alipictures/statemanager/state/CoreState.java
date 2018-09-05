@@ -1,4 +1,4 @@
-package com.alipictures.movie.statemanager.state;
+package com.alipictures.statemanager.state;
 
 import android.view.View;
 

@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/tinyfish/maven/statemanager/images/download.svg) ](https://bintray.com/tinyfish/maven/statemanager/_latestVersion)
+
 # StateManager
 
 标签（空格分隔）： Android

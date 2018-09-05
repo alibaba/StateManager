@@ -1,4 +1,4 @@
-package com.alipictures.movie.statemanager;
+package com.alipictures.statemanager;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -6,13 +6,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.alipictures.movie.statemanager.loader.StateLoader;
-import com.alipictures.movie.statemanager.loader.StateRepository;
-import com.alipictures.movie.statemanager.manager.StateChanger;
-import com.alipictures.movie.statemanager.manager.StateEventListener;
-import com.alipictures.movie.statemanager.manager.StateManager;
-import com.alipictures.movie.statemanager.state.IState;
-import com.alipictures.movie.statemanager.state.StateProperty;
+import com.alipictures.statemanager.loader.StateLoader;
+import com.alipictures.statemanager.loader.StateRepository;
+import com.alipictures.statemanager.manager.StateChanger;
+import com.alipictures.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.manager.StateManager;
+import com.alipictures.statemanager.state.IState;
+import com.alipictures.statemanager.state.StateProperty;
 
 /**
  * TODO 如果动态添加子view，暂时没有好的办法禁止

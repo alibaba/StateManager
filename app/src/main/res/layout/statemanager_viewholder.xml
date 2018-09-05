@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="120dp">
 
-    <com.alipictures.movie.statemanager.StateLayout
+    <com.alipictures.movie.statemanager.statemanager.StateLayout
         android:id="@+id/statelayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,5 +17,5 @@
             android:gravity="center"
             android:text="加载成功"
             android:textSize="30dp" />
-    </com.alipictures.movie.statemanager.StateLayout>
+    </com.alipictures.movie.statemanager.statemanager.StateLayout>
 </FrameLayout>

@@ -8,9 +8,9 @@ import android.widget.Button;
 
 import com.alipictures.movie.demo.state.ExceptionState;
 import com.alipictures.movie.demo.state.LoadingState;
-import com.alipictures.movie.statemanager.StateLayout;
-import com.alipictures.movie.statemanager.manager.StateEventListener;
-import com.alipictures.movie.statemanager.state.CoreState;
+import com.alipictures.statemanager.StateLayout;
+import com.alipictures.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.state.CoreState;
 
 /**
  * 使用StateLayout来支持局部支持展示各种状态的能力

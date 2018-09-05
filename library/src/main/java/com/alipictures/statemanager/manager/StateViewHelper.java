@@ -1,10 +1,10 @@
-package com.alipictures.movie.statemanager.manager;
+package com.alipictures.statemanager.manager;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alipictures.movie.statemanager.state.IState;
+import com.alipictures.statemanager.state.IState;
 
 /**
  * StateView控制器，控制StateView显示、隐藏、创建

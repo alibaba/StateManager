@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.alipictures.movie.demo"
         minSdkVersion 14
@@ -20,15 +20,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
-    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-beta1'
 
 
-    testCompile 'junit:junit:4.12'
-    compile project(path: ':library')
+    testImplementation 'junit:junit:4.12'
+    implementation project(path: ':library')
 
 }

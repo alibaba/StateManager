@@ -1,22 +1,22 @@
-package com.alipictures.movie.statemanager.state;
+package com.alipictures.statemanager.state;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alipictures.movie.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.manager.StateEventListener;
 
 /**
  * State生命周期管理
  */
 public interface IState<T extends StateProperty> {
 
-    public static final String EMPTY = "empty_state";
-    public static final String EXCEPTION = "exception_state";
-    public static final String LAODING = "loading_state";
-    public static final String NETERROR = "net_error_state";
+    String EMPTY = "empty_state";
+    String EXCEPTION = "exception_state";
+    String LAODING = "loading_state";
+    String NETERROR = "net_error_state";
+    String ERROR = "error_state";
 
-    public static final String ERROR = "error_state";
     /**
      * StateView创建后，可以做一些操作
      */

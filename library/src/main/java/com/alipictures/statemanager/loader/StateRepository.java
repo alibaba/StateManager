@@ -1,10 +1,10 @@
-package com.alipictures.movie.statemanager.loader;
+package com.alipictures.statemanager.loader;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.alipictures.movie.statemanager.state.IState;
+import com.alipictures.statemanager.state.IState;
 
 import java.util.HashMap;
 

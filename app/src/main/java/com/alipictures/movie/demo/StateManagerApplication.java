@@ -2,7 +2,7 @@ package com.alipictures.movie.demo;
 
 import android.app.Application;
 
-import com.alipictures.movie.statemanager.loader.StateRepository;
+import com.alipictures.statemanager.loader.StateRepository;
 import com.alipictures.movie.demo.state.ExceptionState;
 import com.alipictures.movie.demo.state.LoadingState;
 

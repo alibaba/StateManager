@@ -1,4 +1,4 @@
-package com.alipictures.movie.statemanager.state;
+package com.alipictures.statemanager.state;
 
 /**
  * 自定义状态方案

@@ -1,6 +1,6 @@
-package com.alipictures.movie.statemanager.manager;
+package com.alipictures.statemanager.manager;
 
-import com.alipictures.movie.statemanager.state.StateProperty;
+import com.alipictures.statemanager.state.StateProperty;
 
 /**
  * 状态观察者

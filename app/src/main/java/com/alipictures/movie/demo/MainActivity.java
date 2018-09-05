@@ -7,8 +7,8 @@ import android.view.View;
 
 import com.alipictures.movie.demo.state.ExceptionState;
 import com.alipictures.movie.demo.state.LoadingState;
-import com.alipictures.movie.statemanager.manager.StateEventListener;
-import com.alipictures.movie.statemanager.state.CoreState;
+import com.alipictures.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.state.CoreState;
 
 
 public class MainActivity extends StateManagerActivity {

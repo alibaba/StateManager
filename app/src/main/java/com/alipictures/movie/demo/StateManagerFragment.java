@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alipictures.movie.statemanager.loader.StateRepository;
-import com.alipictures.movie.statemanager.manager.StateChanger;
-import com.alipictures.movie.statemanager.manager.StateEventListener;
-import com.alipictures.movie.statemanager.manager.StateManager;
-import com.alipictures.movie.statemanager.state.CoreState;
-import com.alipictures.movie.statemanager.state.StateProperty;
+import com.alipictures.statemanager.loader.StateRepository;
+import com.alipictures.statemanager.manager.StateChanger;
+import com.alipictures.statemanager.manager.StateEventListener;
+import com.alipictures.statemanager.manager.StateManager;
+import com.alipictures.statemanager.state.CoreState;
+import com.alipictures.statemanager.state.StateProperty;
 
 
 public abstract class StateManagerFragment extends Fragment implements StateChanger {

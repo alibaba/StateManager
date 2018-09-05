@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.alipictures.movie.demo.state.LoadingState;
-import com.alipictures.movie.statemanager.StateLayout;
-import com.alipictures.movie.statemanager.state.CoreState;
+import com.alipictures.statemanager.StateLayout;
+import com.alipictures.statemanager.state.CoreState;
 
 public class RecyclerViewActivity extends AppCompatActivity {
 

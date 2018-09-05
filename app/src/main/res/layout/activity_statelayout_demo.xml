@@ -22,7 +22,7 @@
         android:text="点击显示Loading态"
         android:textAllCaps="false" />
 
-    <com.alipictures.movie.statemanager.StateLayout
+    <com.alipictures.movie.statemanager.statemanager.StateLayout
         android:id="@+id/statelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,5 +34,5 @@
             android:text="StateLayout Demo"
             android:textAllCaps="false" />
 
-    </com.alipictures.movie.statemanager.StateLayout>
+    </com.alipictures.movie.statemanager.statemanager.StateLayout>
 </LinearLayout>
