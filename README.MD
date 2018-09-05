@@ -6,6 +6,28 @@
 
 ---
 
+## Gradle
+```groovy
+dependencies {
+    compile 'com.alipictures:statemanager:1.0.0'
+}
+```
+## Maven
+```xml
+<dependency>
+  <groupId>com.alipictures</groupId>
+  <artifactId>statemanager</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+## Usage
+```java
+mStateLayout.showState("loading_state");
+```
+
+
+
 ## 是什么？
 
 更加方便的加载各种状态,各个状态事件的回调，支持在Theme里面设置对应状态样式
@@ -39,6 +61,7 @@
 ## 其他
 
 1. 在某些情况下，replaceFragment觉得太重了，可以直接实现一个State，来显示对应的业务，更加的轻量级
+
 
 
 
