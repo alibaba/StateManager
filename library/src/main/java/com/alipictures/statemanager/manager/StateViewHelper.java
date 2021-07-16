@@ -3,7 +3,11 @@ package com.alipictures.statemanager.manager;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
+import com.alipictures.statemanager.R;
 import com.alipictures.statemanager.state.IState;
 
 /**
@@ -34,6 +38,20 @@ public class StateViewHelper {
         ViewGroup.LayoutParams layoutParams = overallView.getLayoutParams();
         if (layoutParams == null) {
             layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        } else if (overallView instanceof FrameLayout) {
+            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(layoutParams);
+            params.setMargins(0, 0, 0, 0);
+            layoutParams = params;
+        } else if (overallView instanceof RelativeLayout) {
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(layoutParams);
+            params.setMargins(0, 0, 0, 0);
+            layoutParams = params;
+        } else if (overallView instanceof LinearLayout) {
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(layoutParams);
+            params.setMargins(0, 0, 0, 0);
+            layoutParams = params;
+        } else {
+            layoutParams = new ViewGroup.LayoutParams(layoutParams);
         }
         layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
         layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT;

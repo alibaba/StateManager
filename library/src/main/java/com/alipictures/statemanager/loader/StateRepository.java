@@ -24,8 +24,8 @@ public class StateRepository implements StateLoader {
     /**
      * 用于映射State和具体State对象
      */
-    protected HashMap<String, IState> stateMap = new HashMap<String, IState>(5);
-    protected static HashMap<String, Class> stateClazzMap = new HashMap<String, Class>(5);
+    private final HashMap<String, IState> stateMap = new HashMap<>(5);
+    private static final HashMap<String, Class> stateClazzMap = new HashMap<>(5);
 
 
     protected Context mContext;
@@ -35,9 +35,9 @@ public class StateRepository implements StateLoader {
     }
 
     @Override
-    public boolean addState(IState changger) {
-        if (changger != null && !TextUtils.isEmpty(changger.getState())) {
-            stateMap.put(changger.getState(), changger);
+    public boolean addState(IState changer) {
+        if (changer != null && !TextUtils.isEmpty(changer.getState())) {
+            stateMap.put(changer.getState(), changer);
             return true;
         }
 
@@ -66,9 +66,7 @@ public class StateRepository implements StateLoader {
             try {
                 istate = (IState) clazz.newInstance();
                 addState(istate);
-            } catch (InstantiationException e) {
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

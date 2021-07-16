@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import com.alipictures.statemanager.state.StateConstants;
 import com.alipictures.statemanager.loader.StateLoader;
 import com.alipictures.statemanager.loader.StateRepository;
 import com.alipictures.statemanager.state.BaseState;
@@ -45,13 +46,14 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         return stateManager;
     }
 
-    public static StateManager newInstance(Context context, StateRepository repository,ViewGroup overallView) {
+    public static StateManager newInstance(Context context, StateRepository repository, ViewGroup overallView) {
         StateManager stateManager = new StateManager(context);
         stateManager.stateRepository = repository;
         stateManager.overallView = overallView;
         return stateManager;
     }
 
+    @Override
     public void setStateEventListener(StateEventListener listener) {
         this.listener = listener;
 
@@ -70,6 +72,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
      *
      * @param state
      */
+    @Override
     public boolean showState(String state) {
         if (overallView == null || TextUtils.isEmpty(state)) {
             return false;
@@ -77,6 +80,9 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
 
         IState iState = stateRepository.get(state);
         if (iState == null) {
+            if(TextUtils.equals(StateConstants.CORE_STATE,state)){
+               throw new IllegalStateException("请检查Core State View是否通过addView方法或者inflate方法动态填充到ViewGroup中的");
+            }
             Log.w("StateManager", "没有注册对应的" + state + "State，需要调用addStater()进行注册");
             return false;
         }
@@ -103,6 +109,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
      *
      * @param state
      */
+    @Override
     public boolean showState(StateProperty state) {
         boolean result = showState(state.getState());
         if (result) {
@@ -128,7 +135,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         if (overallView == null) {
             overallView = new FrameLayout(context);
             overallView.setLayoutParams(
-                new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+                    new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         }
 
         View view = LayoutInflater.from(context).inflate(layoutId, overallView, false);
@@ -145,7 +152,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
 
             overallView = new FrameLayout(context);
             overallView.setLayoutParams(
-                new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+                    new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         }
 
         //注册核心view的State
@@ -160,6 +167,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
     }
 
 
+    @Override
     public String getState() {
         return currentState == null ? BaseState.STATE : currentState.getState();
     }
@@ -175,7 +183,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         if (stater != null) {
             stater.setStateEventListener(listener);
             //如果存在替换流程，需要将之前的StateView移除
-            if(!TextUtils.isEmpty(stater.getState())){
+            if (!TextUtils.isEmpty(stater.getState())) {
                 removeState(stater.getState());
             }
             return stateRepository.addState(stater);
@@ -209,6 +217,7 @@ public class StateManager implements StateViewManager, StateLoader, StateChanger
         overallView.removeAllViews();
     }
 
+    @Override
     public View getStateView(String state) {
 
         IState stateChanger = stateRepository.get(state);

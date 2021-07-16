@@ -11,12 +11,6 @@ import com.alipictures.statemanager.manager.StateEventListener;
  */
 public interface IState<T extends StateProperty> {
 
-    String EMPTY = "empty_state";
-    String EXCEPTION = "exception_state";
-    String LAODING = "loading_state";
-    String NETERROR = "net_error_state";
-    String ERROR = "error_state";
-
     /**
      * StateView创建后，可以做一些操作
      */

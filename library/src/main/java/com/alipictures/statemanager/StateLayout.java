@@ -52,12 +52,7 @@ public class StateLayout extends FrameLayout implements StateChanger, StateLoade
     protected void onFinishInflate() {
         super.onFinishInflate();
         if (getChildCount() > 1) {
-            try {
-                throw new IllegalStateException("StateLayout can have only one direct child");
-
-            } catch (IllegalStateException e) {
-                e.printStackTrace();
-            }
+            throw new IllegalStateException("StateLayout can have only one direct child");
         } else if (getChildCount() == 1) {
             loadCoreView(getChildAt(0));
         }
@@ -94,8 +89,8 @@ public class StateLayout extends FrameLayout implements StateChanger, StateLoade
     }
 
     @Override
-    public boolean addState(IState changger) {
-        return stateManager.addState(changger);
+    public boolean addState(IState changer) {
+        return stateManager.addState(changer);
     }
 
     @Override

@@ -5,7 +5,7 @@ import android.view.View;
 /**
  * 核心UI界面
  */
-public class CoreState extends BaseState {
+public class CoreState extends BaseState<StateProperty> {
 
     public static final String STATE = "CoreState";
 
